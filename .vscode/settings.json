@@ -1,0 +1,10 @@
+{
+    "cucumberautocomplete.steps": [
+        "Tests/Framework/BaseSteps/*.cs",
+    ],
+    "cucumberautocomplete.syncfeatures": "Tests/Features/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.strictGherkinValidation": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true
+}

@@ -1,0 +1,16 @@
+R:\HyperCubeTest\Tests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+R:\HyperCubeTest\Tests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+R:\HyperCubeTest\Tests\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+R:\HyperCubeTest\Tests\bin\Debug\netcoreapp2.2\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+R:\HyperCubeTest\Tests\bin\Debug\netcoreapp2.2\HyperCubeTest.dll.config
+R:\HyperCubeTest\Tests\bin\Debug\netcoreapp2.2\HyperCubeTest.deps.json
+R:\HyperCubeTest\Tests\bin\Debug\netcoreapp2.2\HyperCubeTest.runtimeconfig.json
+R:\HyperCubeTest\Tests\bin\Debug\netcoreapp2.2\HyperCubeTest.runtimeconfig.dev.json
+R:\HyperCubeTest\Tests\bin\Debug\netcoreapp2.2\HyperCubeTest.dll
+R:\HyperCubeTest\Tests\bin\Debug\netcoreapp2.2\HyperCubeTest.pdb
+R:\HyperCubeTest\Tests\obj\Debug\netcoreapp2.2\HyperCubeTest.csprojAssemblyReference.cache
+R:\HyperCubeTest\Tests\obj\Debug\netcoreapp2.2\HyperCubeTest.csproj.CoreCompileInputs.cache
+R:\HyperCubeTest\Tests\obj\Debug\netcoreapp2.2\HyperCubeTest.AssemblyInfoInputs.cache
+R:\HyperCubeTest\Tests\obj\Debug\netcoreapp2.2\HyperCubeTest.AssemblyInfo.cs
+R:\HyperCubeTest\Tests\obj\Debug\netcoreapp2.2\HyperCubeTest.dll
+R:\HyperCubeTest\Tests\obj\Debug\netcoreapp2.2\HyperCubeTest.pdb
