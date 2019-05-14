@@ -36,5 +36,11 @@ namespace HyperCubeTest
             System.Configuration.Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(config, ConfigurationUserLevel.None);
             return configuration.AppSettings.Settings[AppConfigKeys.Website].Value;
         }
+
+        public double DefaultElementWaitTime()
+        {
+            System.Configuration.Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(config, ConfigurationUserLevel.None);
+            return Double.Parse(configuration.AppSettings.Settings[AppConfigKeys.DefaultElementWaitTime].Value);
+        }
     }    
 }

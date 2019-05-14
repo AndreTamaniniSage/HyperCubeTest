@@ -6,6 +6,7 @@ namespace HyperCubeTest
         public const string Username = "Username";
         public const string Password = "Password"; 
         public const string Website = "Website"; 
+        public const string DefaultElementWaitTime = "DefaultElementWaitTime"; 
     }
 
 }

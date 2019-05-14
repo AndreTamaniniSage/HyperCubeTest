@@ -15,12 +15,17 @@ namespace HyperCubeTest
             _driver = driver;
         }
 
-
         [Given(@"a tela inicial")]
         public void NavegaTelaInicial()
         {
             navPage.OpenInitialUrl();
-            //Assert.Fail();
+        }
+
+        [Given(@"o menu ""(.*)""")]
+        [When(@"acessado o menu ""(.*)""")]
+        public void OMenu(string menuPath)
+        {
+            navPage.NavigateByMenu(menuPath);
         }
     }
 }

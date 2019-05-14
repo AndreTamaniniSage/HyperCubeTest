@@ -14,6 +14,18 @@
           "build/_._": {}
         }
       },
+      "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.10.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
+        }
+      },
       "Gherkin/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1847,6 +1859,21 @@
         "tools/_._"
       ]
     },
+    "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+      "sha512": "xc6jVVl5ymgk3ZNWnC/KHxkEup1QpnwYbrwF+NQoCOGERsD8YMlLwmsX4lGhLXCLo/YQTRTIwlKCN9E/doGUNg==",
+      "type": "package",
+      "path": "dotnetseleniumextras.waithelpers/3.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+        "dotnetseleniumextras.waithelpers.nuspec",
+        "lib/net35/SeleniumExtras.WaitHelpers.dll",
+        "lib/net40/SeleniumExtras.WaitHelpers.dll",
+        "lib/net45/SeleniumExtras.WaitHelpers.dll",
+        "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll"
+      ]
+    },
     "Gherkin/6.0.0": {
       "sha512": "7QYZLuX3/unF+onuTVOry6hksN1UEx8niuh7XqZmqKK/ZSihl5yv1YBEHFQ78CMJjeEYB0FLomNds70wWsn+rw==",
       "type": "package",
@@ -3498,7 +3525,7 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
+      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
@@ -6351,6 +6378,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "Microsoft.NET.Test.Sdk >= 16.0.1",
       "Microsoft.NETCore.App >= 2.2.0",
       "NUnit >= 3.11.0",
@@ -6365,23 +6393,24 @@
     ]
   },
   "packageFolders": {
-    "/home/developer/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\andre.tamanini\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/developer/workspace/HyperCubeTest/Tests/HyperCubeTest.csproj",
+      "projectUniqueName": "R:\\HyperCubeTest\\Tests\\HyperCubeTest.csproj",
       "projectName": "HyperCubeTest",
-      "projectPath": "/home/developer/workspace/HyperCubeTest/Tests/HyperCubeTest.csproj",
-      "packagesPath": "/home/developer/.nuget/packages/",
-      "outputPath": "/home/developer/workspace/HyperCubeTest/Tests/obj/",
+      "projectPath": "R:\\HyperCubeTest\\Tests\\HyperCubeTest.csproj",
+      "packagesPath": "C:\\Users\\andre.tamanini\\.nuget\\packages\\",
+      "outputPath": "R:\\HyperCubeTest\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/developer/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\andre.tamanini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -6403,6 +6432,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "DotNetSeleniumExtras.WaitHelpers": {
+            "target": "Package",
+            "version": "[3.11.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.0.1, )"

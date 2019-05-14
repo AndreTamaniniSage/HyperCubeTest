@@ -14,7 +14,6 @@ namespace HyperCubeTest
     [Binding]
     public class DriverSetup
     {
-
         private IObjectContainer _objectContainer;
         private IWebDriver Driver;
 

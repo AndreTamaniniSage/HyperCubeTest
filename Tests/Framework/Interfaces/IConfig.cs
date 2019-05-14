@@ -8,5 +8,6 @@ namespace Framework.Interfaces
         string GetUsername();
         string GetPassword();
         string GetWebSite();
+        double DefaultElementWaitTime();
     }
 }
