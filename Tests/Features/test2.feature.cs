@@ -87,7 +87,7 @@ testRunner.Given("a tela inicial", ((string)(null)), ((TechTalk.SpecFlow.Table)(
         [NUnit.Framework.DescriptionAttribute("TestCenario4")]
         public virtual void TestCenario4()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TestCenario4", "Dado a tela inicial\r\nDado o valor \"teste\" para o campo \"teste2\"", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TestCenario4", "Dado a tela inicial\nDado o valor \"teste\" para o campo \"teste2\"", ((string[])(null)));
 #line 6
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();

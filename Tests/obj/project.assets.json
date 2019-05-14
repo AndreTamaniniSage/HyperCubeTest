@@ -3498,7 +3498,7 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
@@ -6365,24 +6365,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andre.tamanini\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/developer/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "R:\\HyperCubeTest\\Tests\\HyperCubeTest.csproj",
+      "projectUniqueName": "/home/developer/workspace/HyperCubeTest/Tests/HyperCubeTest.csproj",
       "projectName": "HyperCubeTest",
-      "projectPath": "R:\\HyperCubeTest\\Tests\\HyperCubeTest.csproj",
-      "packagesPath": "C:\\Users\\andre.tamanini\\.nuget\\packages\\",
-      "outputPath": "R:\\HyperCubeTest\\Tests\\obj\\",
+      "projectPath": "/home/developer/workspace/HyperCubeTest/Tests/HyperCubeTest.csproj",
+      "packagesPath": "/home/developer/.nuget/packages/",
+      "outputPath": "/home/developer/workspace/HyperCubeTest/Tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\andre.tamanini\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/developer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

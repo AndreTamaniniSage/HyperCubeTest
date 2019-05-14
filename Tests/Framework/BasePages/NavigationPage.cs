@@ -12,8 +12,27 @@ namespace HyperCubeTest
             _driver = driver;
         }
 
-        public void OpenInitialUrl(){
-             _driver.Navigate().GoToUrl(ObjectRepository.Config.GetWebSite());
+        public void OpenInitialUrl()
+        {
+            _driver.Navigate().GoToUrl(ObjectRepository.Config.GetWebSite());
         }
+
+        #region AuxiliaryMethods
+
+        public void IWebElement getMenu(string pathMenu)
+        {
+
+            IWebElement element = null;
+
+            _driver.
+
+
+
+            return element;
+
+        }
+
+        #endregion
+
     }
 }
