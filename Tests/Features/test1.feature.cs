@@ -18,8 +18,8 @@ namespace HyperCubeTest.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("TestFeature1")]
-    public partial class TestFeature1Feature
+    [NUnit.Framework.DescriptionAttribute("Cadastro de Empresa")]
+    public partial class CadastroDeEmpresaFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace HyperCubeTest.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TestFeature1", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Cadastro de Empresa", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -70,31 +70,41 @@ namespace HyperCubeTest.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TestCenario1")]
-        public virtual void TestCenario1()
+        [NUnit.Framework.DescriptionAttribute("Testar inserção de valores nos parâmetros de pesquisa")]
+        public virtual void TestarInsercaoDeValoresNosParametrosDePesquisa()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TestCenario1", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Testar inserção de valores nos parâmetros de pesquisa", null, ((string[])(null)));
 #line 3
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 4
-testRunner.Given("a tela inicial", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("o menu \"Cadastro|Empresa\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TestCenario2")]
-        public virtual void TestCenario2()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TestCenario2", null, ((string[])(null)));
-#line 6
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 7
-testRunner.Given("a tela inicial", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Tipo Inscrição",
+                        "Número Inscrição",
+                        "Razão Social",
+                        "Class. Tributária"});
+            table1.AddRow(new string[] {
+                        "Sociedade Empresária Limitada",
+                        "17.756.309/0001-09",
+                        "Empresa De Doces",
+                        "MEI"});
+#line 5
+testRunner.When("informado os valores para os campos", ((string)(null)), table1, "When ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Tipo Inscrição",
+                        "Número Inscrição",
+                        "Razão Social",
+                        "Class. Tributária"});
+            table2.AddRow(new string[] {
+                        "Sociedade Empresária Limitada",
+                        "17.756.309/0001-09",
+                        "Empresa De Doces",
+                        "MEI"});
 #line 8
-testRunner.Given("o valor \"teste\" para o campo \"teste\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Then("os valores dos campos devem ser", ((string)(null)), table2, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
