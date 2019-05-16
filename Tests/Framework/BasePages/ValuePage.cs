@@ -20,19 +20,24 @@ namespace HyperCubeTest
         }
 
         public void InsertValueToField(string value, string field){
-            IWebElement element = getElement(field);
+            IWebElement element = GetElement(field);
             element.SendKeys(value);
         } 
 
-        public String ReturnValueFromField(string field){
-            IWebElement element = getElement(field);
-            return element.Text;
+        public string ReturnValueFromField(string field){
+            IWebElement element = GetElement(field);
+            string elementText = element.GetAttribute("value");
+            return elementText;
         } 
 
         #region AuxiliaryMethods
-        public IWebElement getElement(string field)
+        public IWebElement GetElement(string field)
         {
             IWebElement element = null;
+            
+            //Geral
+            //Retorna o elemento pelo ID.
+            if(element == null) element = ValueFindSingleElement(By.Id(field));
 
             //InputText
             //Retorna o Input pela label.
@@ -40,11 +45,8 @@ namespace HyperCubeTest
             
             //Retorna o Input pelo xView (nó irmão e primeiro input descentente)
             if(element == null) element = ValueFindSingleElement(By.XPath(string.Format("//label[.='{0}']/following-sibling::*//descendant::input[position()=1]",field)));
-            
-            //Retorna o Input pelo ID.
-            if(element == null) element = ValueFindSingleElement(By.Id(field));
 
-            if(element == null) throw new Exception("Elemento não encontrado");
+            if(element == null) throw new Exception("Elemento para valor não encontrado");
 
             return element;
         }

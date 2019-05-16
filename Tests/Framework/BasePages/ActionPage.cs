@@ -19,24 +19,44 @@ namespace HyperCubeTest
             _driver = driver;
         }
 
-        public void clickButton(string button){
-            IWebElement element = getElement(button);
+        public void ClickButton(string button){
+            IWebElement element = GetElement(button);
             element.Click();
         }
 
+        public void ClickCheckBoxComboBox(string option, string action){
+            IWebElement element = GetElement(option);
+
+            if (action.ToUpper().Equals("MARCADA") & !element.Selected) element.Click(); 
+
+            if (action.ToUpper().Equals("DESMARCADA") & element.Selected) element.Click(); 
+        }
+
+        public Boolean ReturnCheckBoxComboBoxCondition(string option){
+            IWebElement element = GetElement(option);
+
+            if (element.Selected) return true;
+
+            else return false;
+        }
         #region AuxiliaryMethods
-        public IWebElement getElement(string field)
+        public IWebElement GetElement(string field)
         {
             IWebElement element = null;
+
+            //Geral
+            //Retorna o elemento pelo ID
+            if(element == null) element = ActionFindSingleElement(By.Id(field));
 
             //Button
             //Retorna o elemento botão pela label do botão
             if(element == null) element = ActionFindSingleElement(By.XPath(string.Format("//button[.='{0}']",field)));
 
-            //Retorna o elemento botão pelo ID
-            if(element == null) element = ActionFindSingleElement(By.Id(field));
+            //CheckBox
+            //RetornaOCheckBox pela label utilixando XView (nó irmão e primeiro input com classe chebox descentente)
+            if(element == null) element = ActionFindSingleElement(By.XPath(string.Format("//label[.='{0}']/following-sibling::*//descendant::input[@type='checkbox'] [position()=1]",field)));
 
-            if(element == null) throw new Exception("Elemento não encontrado");
+            if(element == null) throw new Exception("Elemento para ação não encontrado");
 
             return element;
         }

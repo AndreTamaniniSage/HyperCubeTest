@@ -1,0 +1,28 @@
+{
+    "cucumberautocomplete.steps": [
+        "Tests/Framework/BaseSteps/*.cs",
+    ],
+   "cucumberautocomplete.syncfeatures": "Tests/features/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.strictGherkinValidation": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "cucumberautocomplete.customParameters": [
+    {
+        "parameter":"{ab}",
+        "value":"(a|b)"
+    }
+],
+"cucumberautocomplete.skipDocStringsFormat": true,
+"cucumberautocomplete.formatConfOverride": {
+    "And": 3,
+    "But": "relative",
+},
+"cucumberautocomplete.onTypeFormat": true,
+"editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true,
+},
+"dotnet-test-explorer.testProjectPath": "Tests"
+}

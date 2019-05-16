@@ -15,8 +15,8 @@ namespace HyperCubeTest
             _driver = driver;
         }
 
-        [Given(@"o valor ""(.*)"" para o campo ""(.*)""")]
-        [When(@"informado o valor ""(.*)"" para o campo ""(.*)""")]
+        [Given(@"o valor (.*) para o campo (.*)")]
+        [When(@"informado o valor (.*) para o campo (.*)")]
         public void OValorParaOCampo(string value, string field)
         {
             valuePage.InsertValueToField(value, field);
@@ -34,7 +34,7 @@ namespace HyperCubeTest
             }
         }
 
-        [Then(@"o valor do campo ""(.*)"" deve ser ""(.*)""")]
+        [Then(@"o valor do campo (.*) deve ser (.*)")]
         public void OValorDoCampoDeveSer(string value, string field)
         {
             Assert.AreEqual(value, valuePage.ReturnValueFromField(field));
@@ -47,11 +47,8 @@ namespace HyperCubeTest
 
             foreach (var nomeCampo in table.Header)
             {
-            Assert.AreEqual(nomeCampo, valuePage.ReturnValueFromField(rowValores[nomeCampo]));
+            Assert.AreEqual(rowValores[nomeCampo], valuePage.ReturnValueFromField(nomeCampo));
             }
         }
-
-
-
     }
 }

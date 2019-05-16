@@ -21,8 +21,8 @@ namespace HyperCubeTest
             navPage.OpenInitialUrl();
         }
 
-        [Given(@"o menu ""(.*)""")]
-        [When(@"acessado o menu ""(.*)""")]
+        [Given(@"o menu (.*)")]
+        [When(@"acessado o menu (.*)")]
         public void OMenu(string menuPath)
         {
             navPage.NavigateByMenu(menuPath);
